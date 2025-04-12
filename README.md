@@ -10,7 +10,7 @@ VMs need their own OS, which makes them heavier and slower.
 
 2. Faster Startup
 
-Docker containers can start in seconds.
+Docker containers can start in seconds. 
 
 VMs can take minutes to boot up.
 
