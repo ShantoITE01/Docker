@@ -83,7 +83,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python", "app.py"]
+CMD ["python", "app.py"] 
 
 Now, you build and run this as a container, and it behaves like a tiny virtual computer that's ready to run your app exactly the way you built it.
 
