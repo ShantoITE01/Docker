@@ -1,0 +1,76 @@
+🧱 **1. Docker Client (CLI)**
+- This is what **you interact with** when you run commands like:
+  ```
+  docker run
+  docker build
+  docker pull
+  ```
+- The Docker Client sends these commands to the **Docker Daemon** using REST APIs.
+
+---
+
+## ⚙️ **2. Docker Daemon (dockerd)**
+- This is the **core service** running in the background.
+- It **builds, runs, and manages containers** based on the commands it receives.
+- It handles:
+  - Pulling images
+  - Creating and managing containers
+  - Managing networks, volumes, etc.
+
+---
+
+## 🛠️ **3. Docker Engine**
+- This is the **entire Docker system** installed on your machine.
+- It includes:
+  - **Docker Daemon**
+  - **Docker CLI**
+  - **Docker REST API**
+- So basically:
+  ```
+  Docker Engine = Docker CLI + Docker Daemon + API
+  ```
+
+---
+
+## 📦 **4. Docker Objects**
+These are the things Docker works with:
+
+### a. **Images**
+- The blueprint or template for containers.
+- Includes app code, dependencies, and configuration.
+
+### b. **Containers**
+- Running instances of Docker images.
+- They are lightweight, isolated environments.
+
+### c. **Volumes**
+- Used for persistent data storage (so data is not lost when containers stop).
+
+### d. **Networks**
+- Allow communication between containers.
+
+---
+
+## 🌐 **5. Docker Registry**
+- A repository for Docker images (like **Docker Hub**).
+- You can **pull** images from it, or **push** your own images to share with others.
+
+---
+
+## 🔁 **How It All Works (Flow)**
+
+```
+You (User)
+   ↓
+Docker CLI (Client)
+   ↓
+Docker Daemon (dockerd)
+   ↓
+Images ↔ Containers ↔ Volumes ↔ Networks
+   ↕
+Docker Registry (e.g., Docker Hub)
+```
+
+---
+
+Let me know if you’d like a diagram or a real-world example (like running a Node.js app in Docker) to understand it even better!
