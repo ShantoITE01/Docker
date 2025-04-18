@@ -179,3 +179,17 @@ REPOSITORY      TAG       IMAGE ID       CREATED        SIZE
 hello-world     latest    abc123xyz...   2 days ago     13kB
 
 node            18        def456pqr...   1 week ago     300MB
+
+Command	What it does:
+
+docker pull <image>	Downloads the image to your system
+
+docker run <image>	Runs a container from that image
+
+## hello-world	A test image used to verify Docker installation
+
+Just open your terminal and run:
+
+docker pull hello-world
+
+docker run hello-world
