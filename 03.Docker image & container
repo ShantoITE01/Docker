@@ -150,3 +150,30 @@ docker run -p 3000:3000 amar-node-app
 | **Docker Image** | The prepared dish, based on the recipe      |
 | **Docker Container** | The cooked food, ready to eat (i.e., to run) |
 
+🧭 What does docker image do?
+The command docker image is used to manage Docker images on your system.
+
+It’s not a complete command on its own — you use it with subcommands like ls, rm, prune, etc.
+
+🔧 Example Subcommands:
+
+Command	What it does
+docker image ls: Lists all images on your system
+
+docker image rm <image-name>: Removes a specific image
+
+docker image prune: Removes unused images
+
+docker image inspect <image-name>: Shows detailed info about an image
+
+✅ Example: See all your Docker images
+
+docker image ls
+
+This will show output like:
+
+REPOSITORY      TAG       IMAGE ID       CREATED        SIZE
+
+hello-world     latest    abc123xyz...   2 days ago     13kB
+
+node            18        def456pqr...   1 week ago     300MB
