@@ -125,7 +125,6 @@ CMD ["node", "index.js"]
 
 ```
 
----
 
 ## 📦 What can you do with this Dockerfile?
 
@@ -140,7 +139,7 @@ Then run a **container from that image** with:
 
 docker run -p 3000:3000 amar-node-app
 
----
+
 
 ## 🤔 In short, remember:
 
@@ -168,7 +167,10 @@ docker image inspect <image-name>: Shows detailed info about an image
 
 ✅ Example: See all your Docker images
 
+```
 docker image ls
+
+```
 
 This will show output like:
 
